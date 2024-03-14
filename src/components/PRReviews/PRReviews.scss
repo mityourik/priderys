@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/typography';
+
+.reviews {
+    padding: 60px 0 0 0;
+    display: flex;
+}
+
+.reviews__container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.reviews__title {
+    font-family: $font-h3-regular;
+    display: flex;
+    padding: 100px 0 0 0;
+    margin: 0;
+}

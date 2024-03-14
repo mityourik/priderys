@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/typography';
+
+.services {
+    padding: 60px 0 0 0;
+    display: flex;
+}
+
+.services__container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.services__title {
+    font-family: $font-h3-regular;
+    display: flex;
+    padding: 100px 0 0 0;
+    margin: 0;
+}

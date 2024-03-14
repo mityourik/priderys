@@ -1,40 +1,41 @@
 import { Routes, Route } from 'react-router-dom';
-import AmbassadorsPage from './components/AmbassadorsPage/AmbassadorsPage';
-import AmbassadorPage from './components/AmbassadorPage/AmbassadorPage';
-import NewAmbassadorPage from './components/NewAmbassadorPage/NewAmbassadorPage';
-import HeaderSidebarLayout from './components/LayoutHeaderSidebar/HeaderSidebarLayout';
-import ContentPage from './components/ContentPage/ContentPage';
+import PRHeader from './components/PRHeader/PRHeader';
+import PRAbout from './components/RRAbout/PRAbout';
+import PRServices from './components/PRServices/PRServices';
+import PRNews from './components/PRNews/PRNews';
+import PRReviews from './components/PRReviews/PRReviews';
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={(
-          <HeaderSidebarLayout>
-            <AmbassadorsPage />
-          </HeaderSidebarLayout>
-      )}
-      />
-      <Route
-        path="/ambassadors"
-        element={(
-          <HeaderSidebarLayout>
-            <AmbassadorsPage />
-          </HeaderSidebarLayout>
-      )}
-      />
-      <Route
-        path="/content"
-        element={(
-          <HeaderSidebarLayout>
-            <ContentPage />
-          </HeaderSidebarLayout>
-      )}
-      />
-      <Route path="/ambassador-page/:ambassadorId" element={<AmbassadorPage />} />
-      <Route path="/new-ambassador" element={<NewAmbassadorPage />} />
-    </Routes>
+    <>
+      <PRHeader />
+      <Routes>
+        <Route
+          path="/"
+          element={(
+            <PRAbout />
+          )}
+        />
+        <Route
+          path="/services"
+          element={(
+            <PRServices />
+          )}
+        />
+        <Route
+          path="/news"
+          element={(
+            <PRNews />
+          )}
+        />
+        <Route
+          path="/reviews"
+          element={(
+            <PRReviews />
+          )}
+        />
+      </Routes>
+    </>
   );
 }
 
