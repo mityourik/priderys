@@ -1,6 +1,4 @@
-# Проект CRM-системы для организации работы с амбассадорами Яндекс Практикума
-
-Этот проект разработан для создания единого рабочего пространства для работы с амбассадорами компании. Основная цель - организация работы комьюнити менеджеров и увеличение объемов продаж с помощью амбассадоров.
+# Проект разработки сайта для конной школы с возможностью бронирования услуг
 
 ## Технологический стек
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -17,14 +15,9 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ## Установка проекта
-* `git@github.com:mityourik/team-5-front.git` — клонировать репозиторий;
+* `git@github.com:mityourik/priderys.git` — клонировать репозиторий;
 * `yarn install` — установить зависимости;
 * `npm run dev` — запустить проект в режиме разработки.
 
 ## Команда разработки №5
 * [Дмитрий Орлов](https://github.com/mityourik)
-* [Сергей Кардашев](https://github.com/SergeyKardashev)
-* [Виктория Матынян](https://github.com/VictoriaMatynyan)
-
-## Макет проекта в Figma
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/DzhvMY9UvrA1ZRCIfzjSZA/CRM-%D0%90%D0%BC%D0%B1%D0%B0%D1%81%D1%81%D0%B0%D0%B4%D0%BE%D1%80%D1%8B-%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%D0%B0?type=design&node-id=0-1&mode=design&t=WOtOmOeNPtjyXJqV-0)
