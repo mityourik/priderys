@@ -12,13 +12,15 @@ function PRHeader() {
         <NavLink to="/news" className="header__list-item">новости</NavLink>
         <NavLink to="/reviews" className="header__list-item">отзывы</NavLink>
       </ul>
-      <button
-        type="button"
-        className="header__button-booking"
-      >
-        <span className="header__button-caret" />
-        забронировать
-      </button>
+      <div className="header__container header__container_content_button">
+        <button
+          type="button"
+          className="header__button-booking"
+        >
+          <span className="header__button-caret" />
+          забронировать услуги
+        </button>
+      </div>
     </header>
   );
 }
