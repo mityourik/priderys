@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import MainLogo from '../../UI/MainLogo/MainLogo';
 import './PRHeader.scss';
 
-function PRHeader() {
+function PRHeader({ onBookingClick }) {
   return (
     <header className="header">
       <MainLogo />
@@ -16,6 +17,7 @@ function PRHeader() {
         <button
           type="button"
           className="header__button-booking"
+          onClick={onBookingClick}
         >
           <span className="header__button-caret" />
           забронировать услуги
@@ -24,5 +26,9 @@ function PRHeader() {
     </header>
   );
 }
+
+PRHeader.propTypes = {
+  onBookingClick: PropTypes.func.isRequired,
+};
 
 export default PRHeader;
