@@ -4,11 +4,14 @@ import mainLogoImg from '../../assets/priderys/mainLogo.svg';
 
 function MainLogo() {
   return (
-    <NavLink to="/">
+    <NavLink
+      to="/"
+      className="main-logo"
+    >
       <img
         alt="Основной лого"
         src={mainLogoImg}
-        className="main-logo"
+        className="main-logo__image"
       />
     </NavLink>
   );

@@ -2,24 +2,28 @@
 @import '../../styles/typography';
 
 .main-logo {
+    display: block;
+}
+
+.main-logo__image {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     cursor: pointer;
     // box-shadow: 0px 4px 6px rgba(176, 190, 197, 0.3);
     border-radius: 80px;
-    padding: 10px;
+    padding: 0;
     // background-color: #fff;
-    position: absolute;
-    top: 0;
+    // position: absolute;
+    // top: 0;
     margin: 0 0 0 15px;
     transition: box-shadow 0.1s ease-in-out;
     box-sizing: border-box;
 
-    &:hover {
-        // border: 1px solid $color-black-900;
-        box-shadow: 0 0 10px 5px rgba(176, 190, 197, 0.3);
-    }      
+    // &:hover {
+    //     // border: 1px solid $color-black-900;
+    //     box-shadow: 0 0 10px 5px rgba(176, 190, 197, 0.3);
+    // }      
 }

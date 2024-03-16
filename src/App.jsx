@@ -6,6 +6,7 @@ import PRServices from './components/PRServices/PRServices';
 import PRNews from './components/PRNews/PRNews';
 import PRReviews from './components/PRReviews/PRReviews';
 import PRFilter from './components/PRFilterBar/PRFilter';
+import './App.scss';
 
 function App() {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -18,9 +19,12 @@ function App() {
     <>
       <PRHeader
         onBookingClick={handleFilterClick}
+        isFilterOpen={isFilterOpen}
       />
       {isFilterOpen && (
-        <PRFilter />
+        <div className="filter-bar">
+          <PRFilter />
+        </div>
       )}
       <Routes>
         <Route

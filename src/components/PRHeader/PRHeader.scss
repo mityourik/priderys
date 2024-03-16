@@ -3,15 +3,10 @@
 
 .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    padding: 0 20px 0 0;
+    padding: 0;
     // box-shadow: 0px 2px 5px rgba(176, 190, 197, 0.3);
-    height: 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
     box-sizing: border-box;
     align-items: center;
 }
@@ -20,17 +15,13 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 50%;
-    padding: 0 0 0 200px;
+    padding: 0;
     margin: 0;
     justify-content: flex-start;
 }
 
 .header__container_content_button {
     display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end;
 }
 
 .header__list-item {
@@ -65,40 +56,45 @@
 
 .header__button-booking {
     background-color: transparent;
+    border: none;
     text-align: center;
-    border: 1px solid $color-darkOrange;
     display: flex;
-    width: 200px;
+    width: 250px;
     height: 35px;
     padding: 0;
     margin: 0;
     background-size: contain;
     cursor: pointer;
-    border-radius: 6px;
-    color: $color-darkOrange;
+    font-family: $font-h3-regular;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-black-500;
     justify-content: center;
     align-items: center;
-    font-family: $font-body2-medium;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    transition: background-color 0.1s ease, color 0.3s ease;
+    transition: transform 0.05s ease, font-size 0.05s ease;
 
     &:hover {
-        background-color: $color-darkOrange;
-        color: #fff;
-
-        .header__button-caret {
-            content: url('../../assets/priderys/arrowDownWhite.svg');
-        }
+        transform: translateY(2px) scale(1.03);
     }
 }
 
+.header__button-booking--active {
+    border: 2px solid $color-black-500;
+    border-radius: 6px;
+}
+
+
 .header__button-caret {
-    content: url('../../assets/priderys/arrowDownOrange.svg');
+    content: url('../../assets/priderys/arrowDownGrey.svg');
     background-repeat: no-repeat;
+    background-size: contain;
     width: 14px;
-    height: 8px;
+    height: 7px;
     display: flex;
-    padding: 2px 9px 0 0;
+    padding: 0 6px 0 0;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.header__button-caret--up {
+    transform: rotateX(180deg);
 }
