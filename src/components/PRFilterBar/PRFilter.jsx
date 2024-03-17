@@ -175,7 +175,7 @@ function PRFilter() {
 
         <div className="filter-form__area filter-form__area--date-range">
           <label htmlFor="dateSelect" className="filter-form__label">
-            Дата регистрации
+            Выберите дату
             <RangeDatePicker
               id="dateSelect"
               startDate={startDate}
